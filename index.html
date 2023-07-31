@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+  
+        <h1>Cálculo de IMC</h1>
+        <p>
+            <label>Sexo</label>
+        <div class="buttons" id="sexo">
+            <button class="mulher" id="mulher" onclick="selectSex('f')">Mulher</button>
+            <button class="homem" id="homem" onclick="selectSex('h')">Homem</button>
+
+        </div>
+
+        <input class="caixa" placeholder="Informe a altura (Ex: 1.80)" type="text" id="altura" name="altura"
+            maxlength="5" height="3px" width=10px />
+
+         <input class="caixa" placeholder="Informe o peso (Ex: 90.0)" type="text" id="peso" name="peso" size="10"
+                maxlength="5" height="3px" width=10px />
+
+        <p>
+            <input class="bt-calcular" type="button" value="Calcular" onclick="calcula_imc()" />
+        </p>
+        <p class="result" id="resultado"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
