@@ -108,3 +108,18 @@ body {
     font-size: 20px;
   }
   
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container2 {
+    background-color: #fff;
+    border: 5px solid #36b1df;
+    border-radius: 20px;
+    width: 550px;
+    justify-content: center;
+    height: 650px;
+    font-size: 1.5rem;
+  }

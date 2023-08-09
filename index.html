@@ -9,29 +9,43 @@
 </head>
 
 <body>
-    
-    <div class="container">
-  
-        <h1>Cálculo de IMC</h1>
-        <p>
-            <label>Sexo</label>
-        <div class="buttons" id="sexo">
-            <button class="mulher" id="mulher" onclick="selectSex('f')">Mulher</button>
-            <button class="homem" id="homem" onclick="selectSex('h')">Homem</button>
+    <section>
+        <div class="container">
 
-        </div>
+            <h1>Cálculo de IMC</h1>
+            <p>
+                <label>Sexo</label>
+            <div class="buttons" id="sexo">
+                <button class="mulher" id="mulher" onclick="selectSex('f')">Mulher</button>
+                <button class="homem" id="homem" onclick="selectSex('h')">Homem</button>
 
-        <input class="caixa" placeholder="Informe a altura (Ex: 1.80)" type="text" id="altura" name="altura"
-            maxlength="5" height="3px" width=10px />
+            </div>
 
-         <input class="caixa" placeholder="Informe o peso (Ex: 90.0)" type="text" id="peso" name="peso" size="10"
+            <input class="caixa" placeholder="Informe a altura (Ex: 1.80)" type="text" id="altura" name="altura"
                 maxlength="5" height="3px" width=10px />
 
-        <p>
-            <input class="bt-calcular" type="button" value="Calcular" onclick="calcula_imc()" />
-        </p>
-        <p class="result" id="resultado"></p>
-    </div>
+            <input class="caixa" placeholder="Informe o peso (Ex: 90.0)" type="text" id="peso" name="peso" size="10"
+                maxlength="5" height="3px" width=10px />
+
+            <p>
+                <input class="bt-calcular" type="button" value="Calcular" onclick="calcula_imc()" />
+            </p>
+            <p class="result" id="resultado"></p>
+        </div>
+
+        <div class="container2">
+            <h1>Tabela de valores de IMC</h1>
+            <ul>
+                <li>Baixo peso muito grave: abaixo de 16 kg/m².</li>
+                <li>Baixo peso grave: entre 16 e 16,99 kg/m².</li>
+                <li>Peso normal: entre 18,50 e 24,99 kg/m².</li>
+                <li>Sobrepeso: entre 25 e 29,99 kg/m².</li>
+                <li>Obesidade grau I: entre 30 e 34,99 kg/m².</li>
+                <li>Obesidade grau II: entre 35 e 39,99 kg/m².</li>
+                <li>Obesidade grau III (obesidade mórbida): maior que 40 kg/m².</li>
+            </ul>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 
